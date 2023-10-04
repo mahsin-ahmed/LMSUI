@@ -1,0 +1,41 @@
+container{
+    max-width: 100%;
+}
+
+.dashboard {
+    display: block;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    max-width: 85%;
+    max-height: 550px;
+}
+h5{
+    text-align: center;
+    padding: 30px 0px 40px 0px;
+}
+
+.left-menu{
+    text-align: right;
+}
+
+.right-menu li{
+    border-bottom: 1px solid rgb(233, 225, 225);
+}
+.left-content{
+    text-align: center;
+}
+.mid-content{
+    text-align: center;
+    border-left: 1px solid rgb(233, 225, 225);
+    border-right: 1px solid rgb(233, 225, 225);
+    min-height: 450px;
+}
+.right-content{
+    text-align: center;
+}
+
+p{
+    padding-top: 10px;
+    margin: 0px;
+}
