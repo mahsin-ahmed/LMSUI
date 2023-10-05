@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root{
+    /* Color */
+    --body-color: #000;
+    --input-color: #bdc3c7;
+    --border-color:#dcdde1;
+    --light-color:#fff;
+    --btn-bg-hover-color:#e21e22;
+
+    /* typography */
+    --body-font: 'Josefin Sans', sans-serif;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1rem;     
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--body-color);
+    font-size: var(--normal-font-size);
+    font-weight: normal;
+}
+
+/* login form design */
+
+.admin-login{
+    width: 100%;
+    min-height: 100vh;
+    /* background: url('/assets/img/admin/background.jpg') no-repeat center/cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-form{
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    background-color:white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);
+}
+.login-form::after{
+   content: '';
+   width: 195px;
+   height: 50px;
+   background:url('/assets/img/admin/after.png') no-repeat right top /cover;
+   position: absolute;
+   top: 0;
+   right: 0;
+   border-radius: 5px;
+}
+.login-form::before{
+    content: '';
+    width: 195px;
+    height: 50px;
+    background:url('/assets/img/admin/before.png') no-repeat bottom left  /cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+ }
+
+ .login-form .logo img{
+    height: 60px;
+    margin-bottom: 10px;
+ }
+
+ .login-form h4{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin: 0px 0 50px 0;
+ }
+ .form-group{
+    height: 45px;
+    margin-bottom: 20px;
+    position: relative;
+ }
+ .form-group .form-control{
+    height: 100%;
+    outline: 0;
+    border: 1px solid #dcdde1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    z-index: 1;
+ }
+ .form-group .form-control:focus{
+    box-shadow: none;
+    border-color: #000;
+ }
+
+ .form-group .form-label{
+    position: absolute;
+    top:.65rem;
+    left: .65rem;
+    transition: .5s;
+    color: #bdc3c7;
+    background: #fff;
+    padding: 0 5px;
+ }
+ .form-control:focus + .form-label
+ ,.form-control:not(:placeholder-shown).form-control:not(:focus) + .form-label
+ {
+    top:-.8rem;
+    left:.5rem;
+    color: black;
+    font-size: 1rem;
+    z-index: 1;
+ }
+
+ .btn-theme{
+    background-color: rgb(143, 8, 143);
+    color: #fff;
+    border-radius: 3px;
+    padding: 0px;
+ }
+ .btn-theme:hover{
+    background-color: rgb(184, 8, 184);
+    color: #fff;
+ }
+
+.usr1{
+   position: absolute;
+   top: 46%;
+   right: 9%;
+ }
+ .psd1{
+   position: absolute;
+   top: 64%;
+   right: 9%;
+ }
+ .validation{
+   position: absolute;
+   bottom: 8%;
+   right: 10%;
+   display: none;
+ }

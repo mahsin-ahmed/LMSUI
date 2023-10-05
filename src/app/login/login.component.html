@@ -1,0 +1,37 @@
+<!-- design for Admin login -->
+
+<div class="admin-login">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="login-form">
+                    <div class="logo">
+                        <a>
+                            <img src="assets/img/admin/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <h4>Admin Login</h4>
+                    <!-- this is an angular reactive form -->
+                    <form [formGroup]="loginForm"  (ngSubmit)="login()" >
+                        <div class="form-group">
+                            <input type="text" class="form-control" formControlName="userEmail" placeholder=" " aria-label="userEmail" autocomplete="off">
+                            <label class="form-label">User Email</label>
+                        </div>
+                        <small *ngIf="userEmail && userEmail.invalid && userEmail.touched" class="text-danger usr1">user email is required*</small>
+                        <div class="form-group">
+                            <input type="password" class="form-control" formControlName="password" placeholder=" " aria-label="Password" autocomplete="off">
+                            <label class="form-label">Password</label>
+                        </div>
+                        <small *ngIf="password && password.invalid && password.touched" class="text-danger psd1">password is required*</small>
+                        <div class="form-group">
+                            <button [disabled]="loginForm.invalid" type="submit"  class="btn btn-lg col-12 btn-theme">
+                                Login
+                            </button>
+                        </div> 
+                        <small class="text-danger validation">user email or password is incorrect!</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
